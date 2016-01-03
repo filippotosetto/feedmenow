@@ -5,6 +5,6 @@ title: Home
 <h2>Recipes</h2>
 <ul>
 {% for recipe in site.recipe %}
-    <li><a href="{{ recipe.url }}">{{ recipe.title }}</a></li>
+    <li><a href="{{ site.baseurl }}{{ recipe.url }}">{{ recipe.title }}</a></li>
 {% endfor %}
 </ul>
