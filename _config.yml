@@ -1,0 +1,28 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+# relative_permalinks: true
+
+# Setup
+title:               Feed Me Now
+tagline:             'A Food Blog'
+description:         'A collection of recipes'
+url:                 'http://filippotosetto.github.io/feedmenow'
+baseurl:             '/feedmenow'
+paginate:            5
+
+# About/contact
+author:
+  name:              Filippo Tosetto
+  url:               https://twitter.com/filippotosetto
+  email:             filippo.tosetto@gmail.com
+
+# Custom vars
+version:             1.0.0
+
+collections:
+  recipe:
+    output: true
+
+gems: [jekyll-paginate]
