@@ -4,7 +4,21 @@ layout: default
 
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
+
+  <h2>Ingredients</h2>
+
+  <ul>  {% for ingredient in page.ingredients %}
+
+  <li>{{ ingredient }} </li>  {% endfor %}  </ul>  <br />
+
+  <h2>Preparation</h2>
+  <ol>
+  {% for prep in page.preparation %}
+    <li>{{ prep }} </li> <br />
+  {% endfor %}
+  </ol>
+
+  {{ page.comment }}
 </div>
 
 <div class="related">
